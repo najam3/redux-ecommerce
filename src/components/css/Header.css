@@ -1,0 +1,45 @@
+   nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+   }
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    flex: 2;
+    flex-shrink: 1;
+}
+
+.nav-logo a {
+   text-decoration: none;
+   color: black;
+   font-size: 32px;
+   flex: 1;
+}
+
+.nav-links .badge .cart{
+    background-color: rgb(0, 157, 157);
+    color: white;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+@media (max-width: 500px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}

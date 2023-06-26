@@ -1,0 +1,119 @@
+ 
+
+ .products {
+   width: 100%;
+   min-width: 500px;
+ }
+
+ .flexWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .partnerBlock {
+   text-align: center;
+   margin: 6em 0;
+   padding: 2em 0;
+ }
+
+ .card {
+    width: 20%;
+    height: 400px;
+    min-width: 300px;
+ }
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+
+.trendingProducts {
+   width: 100%;
+   height: max-content;
+
+}
+
+
+
+.cardTitle {
+   font-size: 16px;
+   font-weight: lighter;
+}
+
+.trendingProduct {
+   margin: 8em 0;
+}
+.cardImg {
+   width: 150px;
+   height: 150px;
+}
+
+.cardy {
+ flex: 1;
+cursor: pointer;
+transition: 0.2s linear all;
+}
+
+.cardy:hover {
+transform: translateY(-10px);
+}
+
+.callAction {
+   width: 100%;
+   height: max-content;
+   margin-bottom: 6em;
+   background-color: lightgray;
+   color: rgb(113, 113, 113);
+   line-height: 30px;
+}
+.featured {
+   margin-left: 3em;
+}
+
+.trending {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+.featured {
+   flex-wrap: wrap;
+}
+
+.fashion {
+   background-color: transparent;
+   border: 1px solid rgb(113, 113, 113);
+   color: rgb(113, 113, 113);
+   padding: 0.2em 1em;
+   border-radius: 5px;
+}
+
+.actions {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.actionLeft {
+flex: 1;
+}
+
+.actionRight {
+flex: 1;
+}
+
+@media (min-width: 500px) and (max-width: 988px) {
+     .partners {
+        justify-content: space-around;
+        gap: 2em;
+    }
+    
+}

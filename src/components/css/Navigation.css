@@ -1,0 +1,102 @@
+nav {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    padding: 0 2em;
+    
+    
+}
+
+.animation {
+    animation: pop-down 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pop-down {
+     from {
+        height: 0;
+     }
+     to {
+        height: 10vh;
+        position: fixed;
+        z-index: 10;
+     }
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.btn_close {
+    display: none;
+}
+.nav_links {
+    display: flex;
+    list-style: none;
+    gap: 4em;
+    margin: 0;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+    .nav_links {
+       flex-direction: column;
+       gap: 2em;
+       z-index: 10;
+       background-color: black;
+       width: 70vw;
+       height: 100vh;
+       position: absolute;
+       left: 0;
+       top: 0;
+       padding: 1.5em 0 0 1em;
+    }   
+
+  .nav_items > a {
+    font-size: 16px;
+  }
+    .nav_links a {
+        font-size: 28px;
+    }
+    .btn_close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1.7em 1.2em 0 0;
+    }
+    .tab_btn {
+        background-color: lightblue;
+        color: orangered;
+        padding: 0.2em 0.5em;
+        
+
+    }
+}
+
+
+
+
+.nav_items > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_bar {
+    display: flex;
+}
+
+.btn_toggler {
+    display: none;
+};
+
+
+
+
+

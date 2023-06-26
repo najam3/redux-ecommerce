@@ -1,0 +1,55 @@
+ .wrapperStyles {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    width: 100%;
+    justify-content: center;
+ }
+
+ .flex2Styles {
+    flex: 3;
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+ .cardStyles {
+    width: 30%;
+    min-width: 250px;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+.cardBodyStyle {
+   font-size: 12px;
+ }
+
+ .cardBodyTitle {
+   font-size: 14px;
+ }
+
+.cardPrice {
+   font-size: 16px;
+   font-weight: bold;
+}
+
+ @media (min-width: 500px) and (max-width: 768px) {
+.cardStyles {
+   min-width: 200px;
+}
+.cardBodyStyle {
+   font-size: 10px;
+ }
+
+ .cardBodyTitle {
+   font-size: 12px;
+ }
+.cardPrice {
+   font-size: 14px;
+   font-weight: bold;
+}
+
+ }

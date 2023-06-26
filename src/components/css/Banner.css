@@ -1,0 +1,58 @@
+.banner {
+    width: 100%;
+    background: url(../imgs/pexels-juan-mendez-1536619.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position:  top right;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.inner-content {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    width: 100%;
+    min-width: 500px;
+    padding-top: 5em;
+    letter-spacing: 2px;
+}
+
+
+
+/* .flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 500px;
+    min-height: 50vh;
+} */
+
+
+@media (min-width: 375px) and (max-width: 768px) {
+    .banner{
+        background-size: 60%;
+        background-position: bottom right;
+    }
+    .flex-container {
+        min-height: 10vh;
+        min-width: 700px;
+    }
+    .inner-content {
+        padding-top: 2em;
+    }
+}
+.flex-container .left {
+    width: 50%;
+    align-self: flex-start;
+    margin-top: 7em;
+}
+
+
+
+.flex-container .left h1 {
+    line-height: 60px;
+}
